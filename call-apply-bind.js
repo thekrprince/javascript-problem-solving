@@ -25,3 +25,15 @@ let personDetails = function () {
 };
 
 personDetails.call(person2);
+
+// Call method with parameter
+let personWork = function (jobTitle) {
+  console.log(this.firstName + ' ' + this.lastName + ' works as a ' + jobTitle);
+};
+
+let person3 = {
+  firstName: 'J.K',
+  lastName: 'Rowling',
+};
+
+personWork.call(person3, 'Writer');
