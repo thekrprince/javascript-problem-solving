@@ -8,4 +8,20 @@ let person = {
   },
 };
 
-console.log(person.fullName());
+person.fullName();
+
+// Call method
+let person2 = {
+  firstName: 'John',
+  lastName: 'Snow',
+};
+
+person.fullName.call(person2);
+
+// Individual method
+
+let personDetails = function () {
+  console.log(this.firstName + ' ' + this.lastName);
+};
+
+personDetails.call(person2);
