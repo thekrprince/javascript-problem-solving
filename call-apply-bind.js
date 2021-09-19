@@ -37,3 +37,23 @@ let person3 = {
 };
 
 personWork.call(person3, 'Writer');
+
+// Apply method
+let personWorkPlace = function (jobTitle, place) {
+  console.log(
+    this.firstName +
+      ' ' +
+      this.lastName +
+      ' works as a ' +
+      jobTitle +
+      ' in ' +
+      place
+  );
+};
+
+let person4 = {
+  firstName: 'The',
+  lastName: 'KrPrince',
+};
+
+personWork.apply(person4, ['SDE', 'Bangalore']);
