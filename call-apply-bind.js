@@ -57,3 +57,13 @@ let person4 = {
 };
 
 personWork.apply(person4, ['SDE', 'Bangalore']);
+
+// Bind method
+
+let person5 = {
+  firstName: 'P',
+  lastName: 'Sasm',
+};
+
+let psas = personWork.bind(person5, 'SSE', 'Bangalore');
+psas();
