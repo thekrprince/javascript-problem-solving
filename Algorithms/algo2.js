@@ -68,5 +68,5 @@ function checkAscii(char) {
 
 // // ============================== Method 3 end ===================================
 
-var res = charCount2('Hi There!! Whats up? Call me on 9113451425');
+var res = charCount('Hi There!! Whats up? Call me on 9113451425');
 console.log(res);
