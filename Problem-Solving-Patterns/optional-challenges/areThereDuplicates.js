@@ -19,11 +19,8 @@ function areThereDuplicates(...args) {
   console.log(frequencyCounter);
 
   for (let key in frequencyCounter) {
-    if (frequencyCounter[key] === 2) {
-      return true;
-    }
+    if (frequencyCounter[key] > 1) return true;
   }
-
   return false;
 }
 
