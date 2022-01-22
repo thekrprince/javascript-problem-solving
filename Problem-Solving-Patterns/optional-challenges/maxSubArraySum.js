@@ -24,5 +24,5 @@ function maxSubarraySum(arr, num) {
 }
 
 var arrVal = [100, 200, 300, 400];
-var res = maxSubarraySum(arrVal, 4);
+var res = maxSubarraySum(arrVal, 2);
 console.log(`maxSum is ${res}`);
