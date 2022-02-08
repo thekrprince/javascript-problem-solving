@@ -1,5 +1,7 @@
 // Selection sort
 
+// Find the min value index and swap it
+
 function selectionSort(arr) {
   var minIndex;
 
