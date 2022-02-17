@@ -1,6 +1,8 @@
 /* Write a function called maxSubArraySum which accepts an array of integers and a number called n. The 
 function should calculate the maximum sum of n consecutive elements in the array. */
 
+// Can be solved using sliding window pattern
+
 /*
   maxSubArraySum([1,2,5,2,8,1,5], 2)      // 10
   maxSubArraySum([1,2,5,2,8,1,5], 4)      // 17
