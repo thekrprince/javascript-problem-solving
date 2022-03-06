@@ -27,25 +27,26 @@
 
 function merge(arr1, arr2) {
   let results = [];
-  let arr1index = 0;
-  let arr2index = 0;
+  let i = 0;
+  let j = 0;
 
-  while (arr1index < arr1.length && arr2index < arr2.length) {
-    if (arr2[arr2index] > arr2[arr1index]) {
-      results.push(arr1[arr1index]);
-      arr1index++;
+  while (i < arr1.length && j < arr2.length) {
+    if (arr2[j] > arr1[i]) {
+      results.push(arr1[i]);
+      i++;
     } else {
-      results.push(arr2[arr2index]);
-      arr2index++;
+      results.push(arr2[j]);
+      j++;
     }
   }
-  while (arr1index < arr1.length) {
-    results.push(arr1[arr1index]);
-    arr1index++;
+  // The below 2 while loop will run if some data is left in either of the arrays
+  while (i < arr1.length) {
+    results.push(arr1[i]);
+    i++;
   }
-  while (arr2index < arr2.length) {
-    results.push(arr2[arr2index]);
-    arr2index++;
+  while (j < arr2.length) {
+    results.push(arr2[j]);
+    j++;
   }
 
   return results;
