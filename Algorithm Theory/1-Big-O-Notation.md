@@ -86,7 +86,7 @@ We say that an algorithm is **O(f(n))** if the number of simple operations the c
 - In a loop, the complexity is the length of the
 loop.
 
-Here are five Big O run times, sorted from fastest to slowest:
+### Here are five Big O run times, sorted from fastest to slowest:
 
 - **O(1)**
 - **O(log n)**
@@ -94,5 +94,6 @@ Here are five Big O run times, sorted from fastest to slowest:
 - **O(n log n)**
 - **O(n^2)**
 
-**Conclusion-**
+## Conclusion-
+
 Algorithm speed isn't measured in seconds, but in growth of the number of operations. Instead, we talk about how quickly the run time of an algorithm increases as the size of the input increases. Run time of algorithms is expressed in Big O notation.
