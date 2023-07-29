@@ -22,9 +22,9 @@ More or less, it comes up in **interviews!!**
 
 ## When evaluating a program, what should be the major concern?
 
-• Is it **fast?**
-• **Less memory** intensive?
-• More **readable**?
+- Is it **fast?**
+- **Less memory** intensive?
+- More **readable**?
 
 Any guess?
 
@@ -68,30 +68,31 @@ We say that an algorithm is **O(f(n))** if the number of simple operations the c
 
 ### Constants don't matter
 
-• O(2n) = O(n)
-• O(500) = O(1)
-• O(13n^2) = O(n^2)
+- O(2n) = O(n)
+- O(500) = O(1)
+- O(13n^2) = O(n^2)
 
 ### Smaller terms also don't matter
 
-• O(n+10) = O(n)
-• O(100n + 50) = O(n)
-• O(n^2+5n+4) = O(n^2)
+- O(n+10) = O(n)
+- O(100n + 50) = O(n)
+- O(n^2+5n+4) = O(n^2)
 
 ### Analyzing complexity with Big O can get complicated, few points which can help are as below-
 
-• Arithmetic operations are constant.
-• Variable assignment is constant.
-• Accessing elements in an array(by index) or object(key) is constant.
-• In a loop, the complexity is the length of the
+- Arithmetic operations are constant.
+- Variable assignment is constant.
+- Accessing elements in an array(by index) or object(key) is constant.
+- In a loop, the complexity is the length of the
 loop.
 
 Here are five Big O run times, sorted from fastest to slowest:
-• **O(1)**
-• **O(log n)**
-• **O(n)**
-• **O(n log n)**
-• **O(n^2)**
+
+- **O(1)**
+- **O(log n)**
+- **O(n)**
+- **O(n log n)**
+- **O(n^2)**
 
 **Conclusion-**
 Algorithm speed isn't measured in seconds, but in growth of the number of operations. Instead, we talk about how quickly the run time of an algorithm increases as the size of the input increases. Run time of algorithms is expressed in Big O notation.
