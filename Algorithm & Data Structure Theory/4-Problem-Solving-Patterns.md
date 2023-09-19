@@ -19,6 +19,8 @@ E.g. Write a function called same, which accepts 2 arrays. The function should r
 
 Solution: Algorithm & Data Structure Theory\same.js
 
+---
+
 2. **Multiple Pointers:** Multiple pointers is a programming technique used in algorithms to efficiently solve problems that involve iterating or comparing elements in an array or a linked list. This technique is particularly useful in scenarios where you need to track or manipulate multiple positions or elements within the data structure simultaneously.
 Here's a brief overview of how multiple pointers work and some common scenarios where they can be applied:
 
