@@ -25,6 +25,7 @@
    - Two Pointers:
 
     Two pointers is one of the most common forms of multiple pointers. You maintain two pointers (usually initialized to different positions in the array or list) and manipulate them based on the problem requirements.
+
     Examples:
     Two Sum: Given an array of numbers, find two numbers that add up to a specific target sum. You can use two pointers to scan from both ends of the array, gradually moving them toward the center.
     Reverse a String/Array: You can use two pointers, one starting from the beginning and the other from the end, and swap the elements until you reach the middle of the array.
@@ -32,5 +33,6 @@
    - Three Pointers:
 
     In some cases, you might need three pointers to solve a problem efficiently.
+
     Example:
     Three Sum: Given an array of numbers, find all unique triplets in the array that add up to a specific target sum. You can use three pointers and adjust their positions based on the sum of elements at those positions.
