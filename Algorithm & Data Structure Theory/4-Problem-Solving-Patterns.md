@@ -27,7 +27,7 @@
     Two pointers is one of the most common forms of multiple pointers. You maintain two pointers (usually initialized to different positions in the array or list) and manipulate them based on the problem requirements.
 
     Examples:
-    Two Sum: Given an array of numbers, find two numbers that add up to a specific target sum. You can use two pointers to scan from both ends of the array, gradually moving them toward the center.
+    Two Sum: Given an array of numbers, find two numbers that add up to a specific target sum. You can use two pointers to scan from both ends of the array, gradually moving them toward the center. Solution is Algorithm & Data Structure Theory\4.2-multiple-pointers1.js
     Reverse a String/Array: You can use two pointers, one starting from the beginning and the other from the end, and swap the elements until you reach the middle of the array.
 
    - Three Pointers:
