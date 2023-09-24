@@ -28,7 +28,7 @@
 
     Examples:
     Two Sum: Given an array of numbers, find two numbers that add up to a specific target sum. You can use two pointers to scan from both ends of the array, gradually moving them toward the center. Solution is Algorithm & Data Structure Theory\4.2-multiple-pointers1.js
-    Reverse a String/Array: You can use two pointers, one starting from the beginning and the other from the end, and swap the elements until you reach the middle of the array.
+    Reverse a String/Array: You can use two pointers, one starting from the beginning and the other from the end, and swap the elements until you reach the middle of the array. Solution is Algorithm & Data Structure Theory\4.3-reverse-an-array.js
 
    - Three Pointers:
 
