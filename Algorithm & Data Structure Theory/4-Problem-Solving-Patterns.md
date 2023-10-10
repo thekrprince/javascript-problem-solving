@@ -36,3 +36,5 @@
 
     Example:
     Three Sum: Given an array of numbers, find all unique triplets in the array that add up to a specific target sum. You can use three pointers and adjust their positions based on the sum of elements at those positions.
+
+    NOTE: If array is not sorted then sort it before solving.
