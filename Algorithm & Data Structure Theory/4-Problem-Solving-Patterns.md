@@ -7,7 +7,7 @@
 3. Sliding Window
 4. Divide and Conquer
 5. Dynamic Programming
-6. Greedy Algorithms
+6. Greedy Algorithm
 7. Backtracking
 8. And many more
 
