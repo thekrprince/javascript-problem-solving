@@ -38,3 +38,7 @@
     Three Sum: Given an array of numbers, find all unique triplets in the array that add up to a specific target sum. You can use three pointers and adjust their positions based on the sum of elements at those positions.
 
     NOTE: If array is not sorted then sort it before solving.
+
+3. **Sliding Window:** This pattern involves creating a window which can either be an array or number from one position to another. Depending on a certain condition, the window either increases or closes(and a new window is created). It's very useful for keeping track of a subset of data in an array/string etc.
+
+   E.g. Write a function called maxSubArraySum which accepts an array of integers and a number called n. The function should calculate the maximum sum of n consecutive elements in the array.
