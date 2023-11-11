@@ -48,4 +48,4 @@
    This pattern can tremendously decrease time complexity.
 
    E.g. Given a sorted array of integers, write a function called search, that accepts a value passed to the function is located. If the value is not found, return -1.
-   
+   Solution: Algorithm & Data Structure Theory\4.6-findTheIndex-divideandconq.js
