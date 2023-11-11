@@ -43,4 +43,9 @@
 
    E.g. Write a function called maxSubArraySum which accepts an array of integers and a number called n. The function should calculate the maximum sum of n consecutive elements in the array.
    Solution: Algorithm & Data Structure Theory\4.5-maxSubArraySum-SlidingWindow.js
+
+4. **Divide and Conquer:** The "divide and conquer" pattern is a problem-solving technique that involves breaking down a problem into smaller sub-problems, solving them independently, and then combining their solutions to solve the original problem. This approach is often used in algorithm design and can be applied to various types of problems.
+   This pattern can tremendously decrease time complexity.
+
+   E.g. Given a sorted array of integers, write a function called search, that accepts a value passed to the function is located. If the value is not found, return -1.
    
