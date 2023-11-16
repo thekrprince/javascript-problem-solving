@@ -24,5 +24,8 @@ function areThereDuplicates(...args) {
   return false;
 }
 
-var res = areThereDuplicates('a', 'b', 1, 5, 1);
+var res = areThereDuplicates("a", "b", 1, 5, 1);
 console.log(res);
+
+var res2 = areThereDuplicates(11, 89, 24, 35);
+console.log(res2);

@@ -1,6 +1,8 @@
 /*
   Write a function called sameFrequency. Given 2 positive integers, find out if the 2 numbers have the
   same frequency of digits.
+
+  Solved using frequency counter
 */
 
 function sameFrequency(number1, number2) {

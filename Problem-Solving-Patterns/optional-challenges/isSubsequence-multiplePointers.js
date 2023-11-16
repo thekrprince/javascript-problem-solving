@@ -3,6 +3,8 @@
   1st string form a subsequence of the characters in the 2nd string. In other words, the function should
   check whether the characters in the 1st string appear somewhere in the 2nd string, without their order
   changing.
+
+  Solved using multiple pointers
 */
 
 function isSubsequence(str1, str2) {
@@ -19,5 +21,5 @@ function isSubsequence(str1, str2) {
   return false;
 }
 
-var res = isSubsequence('hello', 'hello world');
+var res = isSubsequence("hello", "hello world");
 console.log(res);
