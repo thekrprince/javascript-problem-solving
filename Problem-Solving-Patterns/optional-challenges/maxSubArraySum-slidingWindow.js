@@ -1,6 +1,8 @@
 /*
   Given an array of integers and a number, write a function called maxSubarraySum, which finds the maximum
   sum of a subarray with the length of the number passed to the function.
+
+  Solved using sliding window
 */
 
 function maxSubarraySum(arr, num) {
