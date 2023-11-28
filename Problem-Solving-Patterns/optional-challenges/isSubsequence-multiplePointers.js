@@ -22,4 +22,13 @@ function isSubsequence(str1, str2) {
 }
 
 var res = isSubsequence("hello", "hello world");
-console.log(res);
+console.log(res); // true
+
+var res2 = isSubsequence("sing", "stnig");
+console.log(res2); // false
+
+var res3 = isSubsequence("sing", "sting");
+console.log(res3); // true
+
+var res4 = isSubsequence("abc", "acb");
+console.log(res4); // false
