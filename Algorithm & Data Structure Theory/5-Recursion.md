@@ -33,4 +33,5 @@
 Generally, we're used to functions being pushed on the call stack and popped off when they are done.
 But when we write recursive functions, we keep pushing new functions onto the call stack.
 
-E.g. Algorithm & Data Structure Theory\examples\5-countdown.js
+E.g. Algorithm & Data Structure Theory\examples\5.1-countdown.js
+Algorithm & Data Structure Theory\examples\5.2-sumRange.js
