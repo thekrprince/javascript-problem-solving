@@ -22,7 +22,7 @@
 - Base Case
 - Different Input
 
-### Before diving into the example, let's learn call stack.
+### Before diving into the example, let's learn call stack
 
 - It's a stack data structure.
 - Any time a function is invoked it is placed (pushed) on the top of the call stack.
@@ -32,3 +32,5 @@
 
 Generally, we're used to functions being pushed on the call stack and popped off when they are done.
 But when we write recursive functions, we keep pushing new functions onto the call stack.
+
+E.g. Algorithm & Data Structure Theory\examples\5-countdown.js
