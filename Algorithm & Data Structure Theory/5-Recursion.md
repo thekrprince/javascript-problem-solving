@@ -26,7 +26,7 @@
 
 - It's a stack data structure.
 - Any time a function is invoked it is placed (pushed) on the top of the call stack.
-- When JavaScript sees the return keyword or when the function ends, the compiler will removed (pop).
+- When JavaScript sees the return keyword or when the function ends, the compiler will be removed (pop).
 
 ### Why do you care about call stack?
 
@@ -35,3 +35,10 @@ But when we write recursive functions, we keep pushing new functions onto the ca
 
 E.g. Algorithm & Data Structure Theory\examples\5.1-countdown.js
 Algorithm & Data Structure Theory\examples\5.2-sumRange.js
+
+### Where things go wrong with recursion
+
+-> No base case.
+-> Forget to return or returning the wrong thing.
+-> Stack overflow!
+-> Too many nested calls.
