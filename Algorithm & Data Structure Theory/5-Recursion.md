@@ -42,3 +42,9 @@ Algorithm & Data Structure Theory\examples\5.2-sumRange.js
 -> Forget to return or returning the wrong thing.
 -> Stack overflow!
 -> Too many nested calls.
+
+### Pure recursion tips
+
+1. For arrays, use methods like slice, the spread operator, and concat that make copies of arrays so you don't mutate them.
+2. Remember that strings are immutable so you will need to use methods like slice, substr, or substring to make copies of string.
+3. To make copies of objects use Object.assign(), or the spread operator.
