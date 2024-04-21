@@ -18,7 +18,7 @@ In the realm of data structures and algorithms, "searching" refers to the proces
 
 The choice of search algorithm depends on various factors including the size and nature of the dataset, whether the data is sorted, memory constraints, and the desired time complexity of the search operation.
 
-### JavaScript has search!
+### JavaScript has search
 
 There are many different search methods on arrays in JavaScript:
 
@@ -26,3 +26,12 @@ There are many different search methods on arrays in JavaScript:
     - includes
     - find
     - findIndex
+
+### Linear Search Pseudocode
+
+    - This function accepts an array and a value.
+    - Loop through the array and check if the current array element is equal to the value.
+    - If it is, return the index at which the element is found.
+    - If the value is never found, return -1.
+
+Big O of Linear search: O(1) Best and O(N) average/worst.
