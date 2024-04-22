@@ -35,3 +35,5 @@ There are many different search methods on arrays in JavaScript:
     - If the value is never found, return -1.
 
 Big O of Linear search: O(1) Best and O(N) average/worst.
+
+E.g. Algorithm & Data Structure Theory\examples\6.1-linear-search.js
