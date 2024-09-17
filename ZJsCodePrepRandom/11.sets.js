@@ -3,6 +3,7 @@ const s1 = new Set();
 s1.add("hey");
 s1.add("learn");
 s1.add("JS");
+s1.add("JS");
 
 console.log(s1);
 
