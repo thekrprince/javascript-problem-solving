@@ -21,7 +21,7 @@ console.log(twoSum([2, 7, 11, 15], 9));
 console.log(twoSum([3, 2, 4], 6));
 console.log(twoSum([3, 11, 4, 6, 27], 30));
 
-// Optimized solution
+// Optimized solution but still time complexity is O(N^2)
 
 function twoSum1(nums, target) {
   let firstIdx = 0;
@@ -45,3 +45,20 @@ console.log(twoSum1([2, 7, 11, 15], 9));
 console.log(twoSum1([3, 2, 4], 6));
 console.log(twoSum1([3, 11, 4, 6, 27], 30));
 console.log(twoSum1([2, 5, 5, 11], 10));
+
+// Very Optimized Solution - O(N)
+
+function twoSum2(nums, target) {
+  const numToIndexMap = {};
+
+  for (let i = 0; i < nums.length; i++) {
+    let diff = target - nums[i];
+    if (numToIndexMap.hasOwnProperty(diff)) {
+      return [numToIndexMap[diff], i];
+    }
+    numToIndexMap[nums[i]] = i;
+  }
+}
+
+console.log(twoSum2([3, 11, 4, 6, 27], 30));
+console.log(twoSum2([16, 1, 44, 15, 27], 60));
