@@ -1,4 +1,4 @@
-function debounce(func, timeout = 1000) {
+function debounce(func, timeout = 200) {
   let timer;
   return (...args) => {
     console.log(args);
@@ -11,5 +11,5 @@ function addNumBy5(num) {
   console.log(num + 5);
 }
 
-const d = debounce(() => addNumBy5(1));
+const d = debounce(() => addNumBy5(1), 5000);
 d("6");
