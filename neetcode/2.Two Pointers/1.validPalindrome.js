@@ -11,8 +11,19 @@ Explanation: "amanaplanacanalpanama" is a palindrome.
 */
 
 function isPalindrome(s) {
-  const res = s.replace(/[^A-Z0-9a-z]/gi, "");
-  console.log(res);
+  // const res = s.replace(/[^A-Z0-9a-z]/gi, "");
+  let res = "";
+
+  for (let char of s) {
+    if (
+      (char >= "a" && char <= "z") ||
+      (char >= "A" && char <= "Z") ||
+      (char >= "0" && char <= "9")
+    ) {
+      res = res.concat(char);
+    }
+  }
+
   let left = 0;
   let right = res.length - 1;
 
