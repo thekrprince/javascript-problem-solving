@@ -34,7 +34,6 @@ function binarySearch(nums, target) {
 function searchATwoDMatrix(matrix, target) {
   for (let m = 0; m < matrix.length; m++) {
     if (matrix[m][0] <= target && matrix[m][matrix[m].length - 1] >= target) {
-      console.log(matrix[m][0], matrix[m][matrix[m].length - 1]);
       const isTargetFound = binarySearch(matrix[m], target);
       if (isTargetFound) return true;
     }
