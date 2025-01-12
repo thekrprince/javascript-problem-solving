@@ -1,3 +1,6 @@
+// Time complexity -> O(log(m * n))
+// Space complexity -> O(1)
+
 function searchATwoDMatrix(matrix, target) {
   let n = matrix.length;
   let m = matrix[0].length;
