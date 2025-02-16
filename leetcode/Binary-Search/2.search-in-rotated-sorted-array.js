@@ -15,28 +15,19 @@ function searchInRotatedSortedArray(nums, target) {
 
   while (left <= right) {
     let mid = Math.floor((left + right) / 2);
-    console.log("left", left);
-    console.log("right", right);
-    console.log("mid", mid);
     if (nums[mid] === target) {
       return mid;
     } else if (nums[mid] >= nums[left]) {
       if (nums[left] <= target && target <= nums[mid]) {
-        console.log(nums[left] <= target <= nums[mid]);
-        console.log(nums[left], target, nums[mid]);
-        console.log("first");
         right = mid - 1;
       } else {
         left = mid + 1;
-        console.log("second");
       }
     } else {
       if (nums[mid] <= target && target <= nums[right]) {
         left = mid + 1;
-        console.log("third");
       } else {
         right = mid - 1;
-        console.log("fourth");
       }
     }
   }
@@ -46,3 +37,6 @@ function searchInRotatedSortedArray(nums, target) {
 
 const res1 = searchInRotatedSortedArray([4, 5, 6, 7, 0, 1, 2], 0);
 console.log(res1);
+
+const res2 = searchInRotatedSortedArray([1, 0, 1, 1, 1], 0);
+console.log(res2);
