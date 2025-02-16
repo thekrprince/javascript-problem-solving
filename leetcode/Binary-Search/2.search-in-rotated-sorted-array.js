@@ -17,6 +17,10 @@ function searchInRotatedSortedArray(nums, target) {
     let mid = Math.floor((left + right) / 2);
     if (nums[mid] === target) {
       return mid;
+    }
+    // This else if is written to handle duplicates
+    else if (nums[mid] === nums[left]) {
+      left++;
     } else if (nums[mid] >= nums[left]) {
       if (nums[left] <= target && target <= nums[mid]) {
         right = mid - 1;
