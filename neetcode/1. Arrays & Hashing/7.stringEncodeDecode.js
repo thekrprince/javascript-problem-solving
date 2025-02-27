@@ -25,6 +25,7 @@ class Solution {
       decoded.push(str.substring(j + 1, j + 1 + len));
       i = j + 1 + len;
     }
+    console.log(decoded);
     return decoded;
   }
 }
