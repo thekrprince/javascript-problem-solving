@@ -35,3 +35,5 @@ function arrangeNumbers(arr) {
 
 const res1 = arrangeNumbers([3, 30, 34, 5, 9])
 console.log(res1);
+const res2 = arrangeNumbers([54, 546, 548, 60]);
+console.log(res2);
