@@ -33,6 +33,40 @@ function countPairs(arr, k) {
 let arr1 = [1, 4, 1, 4, 5];
 let arr2 = [8, 16, 12, 16, 4, 0];
 const res = countPairs(arr1, 3);
-console.log(res);
+// console.log(res);
 const res1 = countPairs(arr2, 4);
-console.log(res1);
+// console.log(res1);
+
+// Optimised Solution
+function countPairsOptimised(arr, k) {
+    let freq = {};
+    let count = 0;
+
+    for(let i=0; i<arr.length; i++) {
+        console.log("-----------------------------");
+        console.log("i", i);
+        console.log("arr[i]", arr[i]);
+        console.log("(arr[i] + k) in freq",(arr[i] + k) in freq);
+        console.log("(arr[i] - k) in freq",(arr[i] - k) in freq);
+        if((arr[i] + k) in freq) {
+            count += freq[arr[i] + k];
+            console.log("freq[arr[i] + k]", freq[arr[i] + k]);
+        }
+
+        if((arr[i] - k) in freq) {
+            count += freq[arr[i] - k]
+            console.log("freq[arr[i] - k]", freq[arr[i] - k]);
+        }
+
+        console.log("count", count);
+
+        freq[arr[i]] = (freq[arr[i]] || 0) + 1;
+        console.log(freq);
+    }
+    return count;
+}
+
+const res2 = countPairsOptimised(arr1, 3);
+console.log(res2);
+const res3 = countPairsOptimised(arr2, 4);
+console.log(res3);
