@@ -20,9 +20,8 @@ function countPairs(arr, k) {
     for(let i=0; i<arr.length - 1; i++) {
         let j = i + 1;
         while (j < arr.length) {
-            const diff1 = arr[i] - arr[j];
-            const diff2 = arr[j] - arr[i];
-            if(diff1 === k || diff2 === k) {
+            const diff = Math.abs(arr[i] - arr[j]);
+            if(diff=== k) {
                 pairs.push([arr[i], arr[j]])
             }
             j++;
