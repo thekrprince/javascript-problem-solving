@@ -1,4 +1,4 @@
-/*
+/* https://www.geeksforgeeks.org/minimum-number-platforms-required-railwaybus-station/
 # Minimum Platforms Required for Given Arrival and Departure Times
 
 Given two arrays, arr[] and dep[], that represent the arrival and departure times of trains respectively, 
