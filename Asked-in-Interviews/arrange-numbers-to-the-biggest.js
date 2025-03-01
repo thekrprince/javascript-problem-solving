@@ -18,8 +18,6 @@ function compareStr(s1, s2) {
 }
 
 function arrangeNumbers(arr) {
-
-    let res = [];
     let numbers = arr.map(String);
     // let numbers = arr.map(el => el.toString());
     
