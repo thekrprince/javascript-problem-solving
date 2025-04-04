@@ -1,4 +1,5 @@
 // Sort Colors -> The optimal problem is solved in 4th number file
+// This too beats 100% on leetcode
 
 function sortColors(arr) {
   let zeroCount = 0;
