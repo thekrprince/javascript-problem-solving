@@ -1,6 +1,8 @@
 // Given an integer array of size n, find all elements that appear more than ⌊ n/3 ⌋ times
 // https://leetcode.com/problems/majority-element-ii/
 
+// Done using the one iteration but still it's a better approach not the optimal one
+
 function majorityElement(nums) {
   const countRequired = Math.floor(nums.length / 3) + 1;
   const obj = {};
