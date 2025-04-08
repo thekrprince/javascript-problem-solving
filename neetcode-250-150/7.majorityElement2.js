@@ -9,12 +9,10 @@ function majorityElement(nums) {
   let majorityEle = [];
 
   for (let val of nums) {
-    // if(obj[val]) {
     obj[val] = (obj[val] || 0) + 1;
     if (obj[val] === countRequired) {
       majorityEle.push(val);
     }
-    // }
   }
 
   return majorityEle;
