@@ -17,7 +17,7 @@ function subArraySumEqualsK(nums, k) {
   console.log(count);
 }
 
-const input1 = [1, -1, 1, 1, 1];
+const input1 = [1, -1, 1, 1, 1, 1];
 const input2 = [1, 1, 1];
 const input3 = [1, 2, 3];
 
