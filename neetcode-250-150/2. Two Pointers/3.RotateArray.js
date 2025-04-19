@@ -1,7 +1,7 @@
 // File: 3.RotateArray.js
 
+// This is the okay solution as the recommendation is to modify array in-place
 function rotateArray(nums, k) {
-  // TODO: Implement the function
   let res = new Array(nums.length).fill(0);
   for (let i = 0; i < nums.length; i++) {
     let findIndexToPlace = (i + k) % nums.length;
