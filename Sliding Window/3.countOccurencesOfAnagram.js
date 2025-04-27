@@ -29,7 +29,7 @@ function countOccurrencesOfAnagram(str, a) {
   }
 
   while (j < str.length) {
-    if (j < k) {
+    if (j - i + 1 < k) {
       j++;
     }
 
