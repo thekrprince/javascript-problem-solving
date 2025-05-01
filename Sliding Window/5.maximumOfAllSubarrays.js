@@ -33,3 +33,9 @@ function maximumOfAllSubArrays(nums, k) {
 console.log(maximumOfAllSubArrays([1, 3, -1, -3, 5, 3, 6, 7], 3));
 console.log(maximumOfAllSubArrays([9, 5, 3, 1, 6, 3], 2));
 console.log(maximumOfAllSubArrays([4, 3, 5, 4, 3, 3, 6, 7], 3));
+
+// Edge cases
+console.log(maximumOfAllSubArrays([4, 2, 12, 3, 5], 1));
+
+let arr = [2, 1, 3, 4, 6, 3, 8];
+console.log(maximumOfAllSubArrays(arr, arr.length));
