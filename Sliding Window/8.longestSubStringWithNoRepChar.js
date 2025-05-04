@@ -13,8 +13,8 @@ function longestSubstringWithNoRepeatingChar(str) {
     const mapSize = Object.keys(map).length;
 
     if (mapSize < j - i + 1) {
-      const leftChar = str[i];
       while (mapSize < j - i + 1) {
+        const leftChar = str[i];
         map[leftChar]--;
         if (map[leftChar] === 0) {
           delete map[leftChar];
