@@ -28,6 +28,30 @@ function longestSubstringWithoutRepChar(s) {
   return longestSub;
 }
 
+console.log("---------------V0----------------");
 console.log(longestSubstringWithoutRepChar("zxyzxyz"));
 console.log(longestSubstringWithoutRepChar("xxxxx"));
 console.log(longestSubstringWithoutRepChar("pwwkew"));
+
+// Using Sliding Window and Set
+function longestSubstringWithoutRepCharV1(s) {
+  let i = 0;
+  let longestSub = 0;
+  let charSet = new Set();
+
+  for (let j = 0; j < s.length; j++) {
+    while (charSet.has(s[j])) {
+      charSet.delete(s[i]);
+      i++;
+    }
+    charSet.add(s[j]);
+    longestSub = Math.max(longestSub, j - i + 1);
+  }
+
+  return longestSub;
+}
+
+console.log("---------------V1----------------");
+console.log(longestSubstringWithoutRepCharV1("zxyzxyz"));
+console.log(longestSubstringWithoutRepCharV1("xxxxx"));
+console.log(longestSubstringWithoutRepCharV1("pwwkew"));
