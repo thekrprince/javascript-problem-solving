@@ -1,4 +1,5 @@
-// Permutation In String
+// Permutation In String - https://leetcode.com/problems/permutation-in-string/description/
+// This question is same as anagram
 
 function checkInclusion(s1, s2) {
   let k = s1.length;
