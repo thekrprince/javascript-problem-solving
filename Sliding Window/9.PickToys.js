@@ -1,3 +1,6 @@
+// This problem is not available anywhere, was asked in a interview to someone.
+// John is at a toy store help him pick maximum number of toys. He can only select in a continuous manner and he can select only two types of toys.
+
 function pickToys(toys, k) {
   let i = 0;
   let j = 0;
