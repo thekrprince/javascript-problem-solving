@@ -1,0 +1,1 @@
+// https://www.greatfrontend.com/questions/javascript/function-apply?practice=practice&tab=coding
