@@ -17,4 +17,5 @@ let obj1 = {
   num: 9,
 };
 
+console.log(multiplyLuckyNum.myCall(obj1));
 console.log(multiplyLuckyNum.myCall(obj1, "hello", "world"));
