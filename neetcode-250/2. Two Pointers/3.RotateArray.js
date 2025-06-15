@@ -12,15 +12,9 @@ function rotateArray1(nums, k) {
     }
   }
 
-  let i = 0,
-    j = nums.length - 1;
-  reverse(i, j);
-
-  (i = 0), (j = k - 1);
-  reverse(i, j);
-
-  (i = k), (j = nums.length - 1);
-  reverse(i, j);
+  reverse(0, nums.length - 1); // Reverse the whole array
+  reverse(0, k - 1); // Reverse till kth element
+  reverse(k, nums.length - 1); // Reverse from kth till end
 }
 
 rotateArray([1, 2, 3, 4, 5, 6, 7], 3); // [5, 6, 7, 1, 2, 3, 4]
