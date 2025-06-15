@@ -1,4 +1,4 @@
-// File: 3.RotateArray.js
+// Leetcode - 189
 
 // Optimal solution with O(1) space.
 function rotateArray1(nums, k) {
