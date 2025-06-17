@@ -4,12 +4,12 @@ function nearestGreaterToLeft(arr) {
   let stack = [];
   let res = [];
 
-  for (let i = 0; i <= arr.length; i++) {
+  for (let i = 0; i < arr.length; i++) {
     if (stack.length === 0) {
       res.push(-1);
-    } else if (stack[stack.length - 1] > arr[i]) {
+    } else if (stack.length > 0 && stack[stack.length - 1] > arr[i]) {
       res.push(stack[stack.length - 1]);
-    } else if (stack[stack.length - 1] <= arr[i]) {
+    } else if (stack.length > 0 && stack[stack.length - 1] <= arr[i]) {
       while (stack[stack.length - 1] <= arr[i]) {
         stack.pop();
       }
