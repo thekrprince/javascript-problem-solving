@@ -28,3 +28,6 @@ function nearestGreaterToLeft(arr) {
 
 const res1 = nearestGreaterToLeft([4, 2, 3, 1]);
 console.log(res1);
+
+const res2 = nearestGreaterToLeft([1, 3, 2, 4]);
+console.log(res2);
