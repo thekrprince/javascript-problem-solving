@@ -1,4 +1,5 @@
 // Nearest greater to right - https://www.youtube.com/watch?v=NXOOYYwpbg4&list=PL_z_8CaSLPWdeOezg68SKkeLN4-T_jNHd&index=2
+// Find the nearest greater in the right side and if not found, add -1 for that in the result
 
 function findNearestGreaterInRight(arr) {
   let stack = [];
