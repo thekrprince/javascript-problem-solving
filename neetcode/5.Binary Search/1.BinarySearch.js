@@ -3,7 +3,7 @@ function binarySearch(nums, target) {
   let right = nums.length - 1;
   let mid = Math.floor((right + left) / 2);
 
-  while (left < right) {
+  while (left <= right) {
     if (nums[mid] === target) {
       return mid;
     } else if (nums[mid] < target) {
