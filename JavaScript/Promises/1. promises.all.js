@@ -1,4 +1,4 @@
-// Promise.all function
+// Promise.all function - Takes multiple promises and return the result
 
 /******* Promise.all success example ******/
 const promise1 = new Promise((resolve, reject) => {
