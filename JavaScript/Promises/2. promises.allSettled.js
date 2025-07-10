@@ -1,4 +1,4 @@
-// Promise.allSettled - Takes iterable and return the result for all the Promises upon settlement of all irrespective of success/reject.
+// Promise.allSettled - Takes iterable and return the result for all the Promises upon settlement of all irrespective of the result.
 
 const p1 = new Promise((resolve, reject) => {
   //   setTimeout(() => resolve("P1 success"), 2000);
