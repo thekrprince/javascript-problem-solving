@@ -1,4 +1,6 @@
 // Promise.all function - It takes an iterable (usually, an array of promises) and returns a new promise.
+// The new promise resolves when all listed promises are resolved, and the array of their results becomes its result.
+// For instance, the Promise.all below settles after 3 seconds, and then its result is an array [ 'Promise 1 Success', 'Promise 2 Success', 'Promise 3 Success' ]
 
 /******* Promise.all success example ******/
 const promise1 = new Promise((resolve, reject) => {
@@ -32,4 +34,5 @@ const p3 = new Promise((resolve, reject) => {
 Promise.all([p1, p2, p3])
   .then((res) => console.log(res))
   .catch((err) => console.error(err));
-// Output wil be Promise 3 fail after 2 seconds.
+// Output wil be Promise 3 fail after 2 seconds coz when any of the promises is rejected,
+// the promise returned by Promise.all immediately rejects with that error.
