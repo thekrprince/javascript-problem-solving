@@ -17,7 +17,7 @@ let p3 = new Promise((resolve, reject) => {
 Promise.any([p1, p2, p3])
   .then((res) => console.log(res))
   .catch((err) => console.error(err));
-// The first promise here was fastest, but it was rejected, so the second promise became the result.
+// The third promise here was fastest, but it was rejected, so the second promise became the result.
 // After the first fulfilled promise “wins the race”, all further results are ignored.
 
 Promise.any([
