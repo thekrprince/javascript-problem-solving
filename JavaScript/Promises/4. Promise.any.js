@@ -19,3 +19,16 @@ Promise.any([p1, p2, p3])
   .catch((err) => console.error(err));
 // The first promise here was fastest, but it was rejected, so the second promise became the result.
 // After the first fulfilled promise “wins the race”, all further results are ignored.
+
+Promise.any([
+  new Promise((resolve, reject) =>
+    setTimeout(() => reject(new Error("Ouch!")), 1000)
+  ),
+  new Promise((resolve, reject) =>
+    setTimeout(() => reject(new Error("Error!")), 2000)
+  ),
+]).catch((error) => {
+  console.log(error.constructor.name); // AggregateError
+  console.log(error.errors[0]); // Error: Ouch!
+  console.log(error.errors[1]); // Error: Error!
+});
