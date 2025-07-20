@@ -1,10 +1,11 @@
+// Promise.all Polyfill using async and await
 function promiseAll(iterable) {
   return new Promise((resolve, reject) => {
     let results = new Array(iterable.length);
     let unresolved = iterable.length;
 
     if (unresolved === 0) {
-      reject(results);
+      resolve(results);
       return;
     }
 
