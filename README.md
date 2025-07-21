@@ -1,3 +1,4 @@
-# javascript-problem-solving
+# JavaScript Problem Solving
 
-### Documenting my Problem Solving + Data Structure & Algorithms journey in JavaScript.
+- JS problems asked in interviews.
+- JS practice problems.
