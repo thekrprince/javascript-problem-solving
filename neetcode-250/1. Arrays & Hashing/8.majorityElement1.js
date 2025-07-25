@@ -8,7 +8,7 @@ function majorityElement(nums) {
 
   for (let i = 0; i < nums.length; i++) {
     if (count === 0) res = nums[i];
-
+    console.log("res", res);
     if (res === nums[i]) {
       count++;
     } else {
@@ -23,4 +23,4 @@ const nums1 = [3, 2, 3];
 console.log(majorityElement(nums1));
 
 const nums2 = [2, 2, 1, 1, 1, 2, 2];
-console.log(majorityElement(nums2));
+// console.log(majorityElement(nums2));
