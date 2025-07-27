@@ -1,0 +1,27 @@
+body {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: "Lato", sans-serif;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;;
+}
+
+#search-input {
+    height: 2rem;
+    width: inherit;
+    border-width: 0.1rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.product-list {
+    padding: 0.25rem;
+}
