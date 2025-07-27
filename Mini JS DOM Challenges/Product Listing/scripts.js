@@ -12,10 +12,19 @@ async function fetchProducts(query) {
         list.innerHTML = `Title: ${qp.title} | Price: ${qp.price} | Category: ${qp.category}`;
         mainlist.append(list);
     })
-
 }
 
-inputBox.addEventListener("input", function (e) {
-    const val = e.target.value;
-    fetchProducts(val);
-})
+function debounce(fn, delay = 300) {
+    let timeout;
+
+    return function (...args) {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => fn.apply(this, args), delay);
+    }
+}
+
+function inputChange(e) {
+    fetchProducts(e.target.value)
+}
+
+inputBox.addEventListener("input", debounce(inputChange))
