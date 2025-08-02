@@ -16,9 +16,6 @@ function promiseAllSettled(iterable) {
         results[index] = { status: "fulfilled", value: val };
       } catch (err) {
         results[index] = { status: "rejected", reason: err };
-        if (pending.length === 0) {
-          resolve(results);
-        }
       }
 
       pending -= 1;
