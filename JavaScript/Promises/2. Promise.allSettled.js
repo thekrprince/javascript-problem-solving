@@ -7,11 +7,11 @@ const p1 = new Promise((resolve, reject) => {
 });
 
 const p2 = new Promise((resolve, reject) => {
-  setTimeout(() => resolve("P1 success"), 1000);
+  setTimeout(() => resolve("P2 success"), 1000);
 });
 
 const p3 = new Promise((resolve, reject) => {
-  setTimeout(() => resolve("P1 success"), 3000);
+  setTimeout(() => resolve("P3 success"), 3000);
 });
 
 const promise = Promise.allSettled([p1, p2, p3])
