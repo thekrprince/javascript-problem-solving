@@ -29,3 +29,27 @@ const double1 = multiplier(2);
 const triple1 = multiplier(3);
 console.log(double1(10));
 console.log(triple1(20));
+
+// Advance currying
+function curry(func) {
+    return function curried(...args) {
+        if (args.length >= func.length) {
+            return func.apply(this, args);
+        } else {
+            return function (...args2) {
+                return curried.apply(this, args.concat(args2));
+            };
+        }
+    };
+
+}
+
+function sum1(a, b, c) {
+    return a + b + c;
+}
+
+let curriedSum = curry(sum1);
+
+console.log(curriedSum(1, 2, 3));
+console.log(curriedSum(1, 2)(3));
+console.log(curriedSum(1)(1, 2));
