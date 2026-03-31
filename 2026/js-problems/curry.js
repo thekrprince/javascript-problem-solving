@@ -1,6 +1,7 @@
 // Currying - https://javascript.info/currying-partials
 // Currying is the process of transforming a function that takes multiple arguments into a sequence of functions, each taking a single argument.
 
+/******** 1st *******/
 function sum(num) {
     return function (a) {
         return function (b) {
@@ -11,6 +12,8 @@ function sum(num) {
 
 console.log(sum(2)(3)(4));
 
+
+/******** 2nd *******/
 function multiplier(factor) {
     return function (num) {
         return factor * num;
@@ -30,7 +33,8 @@ const triple1 = multiplier(3);
 console.log(double1(10));
 console.log(triple1(20));
 
-// Advance currying
+
+/******** 3rd - Advance Currying *******/
 function curry(func) {
     return function curried(...args) {
         if (args.length >= func.length) {
