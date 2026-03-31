@@ -1,5 +1,6 @@
 // Currying - https://javascript.info/currying-partials
 // Currying is the process of transforming a function that takes multiple arguments into a sequence of functions, each taking a single argument.
+// Currying is a transformation of functions that translates a function from callable as f(a, b, c) into callable as f(a)(b)(c).
 
 /******** 1st *******/
 function sum(num) {
