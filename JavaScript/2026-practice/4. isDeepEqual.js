@@ -1,4 +1,4 @@
-// 
+// Object/Arrays deep equal comparison
 
 function deepEqual(obj1, obj2) {
     if (obj1 === obj2) return true;
@@ -40,3 +40,16 @@ const object2 = {
 };
 
 console.log(deepEqual(object1, object2)); // true
+
+
+const object3 = {
+    name: 'John',
+    languages: ["English", "Hindi"],
+};
+
+const object4 = {
+    name: 'John',
+    languages: ["English", "Hindi"],
+};
+
+console.log(deepEqual(object3, object4)); // true
