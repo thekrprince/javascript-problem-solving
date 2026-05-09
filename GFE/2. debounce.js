@@ -17,12 +17,23 @@ function debounce(func, wait) {
     };
 }
 
+// Function increment without args
 function increment(i = 0) {
     i++;
-    console.log("i is: ", i);
+    console.log("i is:", i);
 }
 
 const debouncedIncrement = debounce(increment, 3000);
 debouncedIncrement();
 debouncedIncrement();
 debouncedIncrement();
+
+
+// Function search query with args
+function searchQuery(query) {
+    console.log("Searching:", query);
+}
+
+const debouncedSearch = debounce(searchQuery, 2000);
+debouncedSearch("app");
+debouncedSearch("apple");
