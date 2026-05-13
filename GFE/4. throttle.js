@@ -28,4 +28,8 @@ const throttledIncrement = throttle(increment, 2000);
 
 setInterval(() => {
     throttledIncrement();
-}, 100);
+}, 300);
+
+// Output explanation
+// Calls happen every 300ms. BUT output happens every 2 sec.
+// This clearly shows: throttle allows execution periodically, not just once
